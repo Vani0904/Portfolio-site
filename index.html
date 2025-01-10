@@ -6,6 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/web-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Javani Morris</title>
 </head>
@@ -19,7 +20,6 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <button class="theme-toggle-btn"  type="button" aria-label="Toggle Dark Mode"><img src="assets/sun-icon.png"></button>
                 </ul>
@@ -31,17 +31,17 @@
             <div class="container">
                 <div>
                     <h1>Hi There, I'm <span class="gradient-purple">Javani Morris</span></h1>
-                    <p>I am an <span class="gradient-purple">Aspiring Software Engineer</span></p>
+                    <p>I am an <span class="gradient-purple">Aspiring Software Engineer</span> studying at Sheffield Hallam University</p>
                     <a href="#about" class="btn">About Me</a>
                     <div class="social-icons">
-                        <a class="cv-btn" href="#"><button>My CV</button></a>
                         <a class="git-icon" href="https://github.com/Vani0904"><img src="assets/github-icon.png"></img></a>
                         <a href="https://www.linkedin.com/in/javani-morris-9a1b25226/"><img src="assets/linkedin-icon.png"></img></a>
                     </div>
                 </div>
                 <div class="hero-img">
-                    <img src="" alt="Portfolio Image">
+                    <img src="assets/hero-img.jpeg" alt="Portfolio Image">
                 </div>
+            </div>
         </section>
         <section class="about-me" id="about">
             <div class="container">
@@ -67,48 +67,40 @@
         <section class="projects" id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
+                <div class="projects-section">
+                    <div class="project">
+                        <h3>Inventory Management System</h3>
+                        <div class="img-gallery">
+                            <img src="assets/prj-2/inventory-system-img-1.png" alt="inventory system project image">
+                            <img src="assets/prj-2/inventory-system-img-2.png" alt="inventory system project image">
+                            <img src="assets/prj-2/inventory-system-img-3.png" alt="inventory system project image">
+                            <p>This Inventory management system was developed as a group, with the goal of implementing real features of an inventory system such as,
+                                allowing admins to add,remove and update products, generate reports and issue invoices for over the counter purchases. 
+                                The project allowed me to gain experience in both front-end and back-end and scrum methodologies, my main focus in the group was implementing the main
+                                admin features allowing for products to be added,removed or edited and generate a report of all the available products and filter the inventory table to find
+                                relevant data.
+                            </p>
+                            <p><strong>Technologies and Languages Used:</strong> HTML,CSS,PHP and MySQL,ZAP</p>
+                        </div>
+                    </div>
+                    <div class="project">
                         <h3>E-Commerce Website</h3>
-                        <div id="project1-carousel" class="carousel">
-                            <img src="assets/e-commerce-portfolio-img-1.png" class="carousel-image active" alt="e-commerce website project">
-                            <img src="assets/e-commerce-portfolio-img-2.png" class="carousel-image" alt="e-commerce website project">
-                            <img src="assets/e-commerce-portfolio-img-3.png" class="carousel-image" alt="e-commerce website project">
-                            <img src="assets/e-commerce-portfolio-img-4.png" class="carousel-image" alt="e-commerce website project">
-                            <img src="assets/e-commerce-portfolio-img-5.png" class="carousel-image" alt="e-commerce website project">
-                            <img src="assets/e-commerce-portfolio-img-7.png" class="carousel-image" alt="e-commerce website project">
-                            <button id="nextButton1" class="carousel-btn prev" onclick="prevSlide()">❮</button>
-                            <button id="prevButton1" class="carousel-btn next" onclick="nextSlide()">❯</button>
+                        <div class="img-gallery">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-1.png" alt="e-commerce website project image">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-2.png" alt="e-commerce website project image">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-3.png" alt="e-commerce website project image">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-4.png" alt="e-commerce website project image">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-5.png" alt="e-commerce website project image">
+                            <img src="assets/prj-1/e-commerce-portfolio-img-7.png" alt="e-commerce website project image">
+                            <p>This E-Commerce Website was developed in my free time, with the goal of replicating the features of a
+                                fully functional, real-world online store. The project allowed me to gain experience in both front-end and back-end, 
+                                and i focused on implementing secure user validation, user's orders page, and a user friendly interface. 
+                                I also worked on optimizing performance and accessibility. Overall, this project 
+                                deepened my understanding of developing websites fit for e-commerce, as well as integrating efficient back-end systems.
+                            </p>
+                            <p><strong>Technologies and Languages Used:</strong> HTML,CSS,PHP and MySQL</p>
                         </div>
-                        <p>This E-Commerce Website was developed in my free time, with the goal of replicating the features of a
-                            fully functional, real-world online store. The project allowed me to gain experience in both front-end and back-end, and i focused on implementing secure user validation, user's orders page, and a user friendly interface. I also worked on optimizing performance and accessibility. Overall, this project 
-                            deepened my understanding of developing websites fit for e-commerce, as well as integrating efficient back-end systems.
-                        </p>
-                        <p><strong>Technologies and Languages Used:</strong> HTML,CSS,PHP and MySQL</p>
                     </div>
-                    <div class="project-card">
-                        <h3>E-Commerce Site</h3>
-                        <div id="project2-carousel" class="carousel">
-                            <img src="" class="carousel-image active" alt="e-commerce website project">
-                            <img src="" class="carousel-image" alt="e-commerce website project">
-                            <img src="" class="carousel-image" alt="e-commerce website project">
-                            <img src="" class="carousel-image" alt="e-commerce website project">
-                            <img src="" class="carousel-image" alt="e-commerce website project">
-                            <img src="" class="carousel-image" alt="e-commerce website project">
-                            <button id="nextButton2" class="carousel-btn prev" onclick="prevSlide()">❮</button>
-                            <button id="prevButton2" class="carousel-btn next" onclick="nextSlide()">❯</button>
-                        </div>
-                        <p></p>
-                        <p><strong>Technologies and Languages Used:</strong> HTML,CSS,PHP and MySQL</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="container">
-                <div class="skills-details">
-                    <h2>Skills</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
@@ -132,6 +124,5 @@
         </div>
     </footer>
     <script src="js/darkMode.js" defer></script>
-    <script src="js/carousel.js" defer></script>
 </body>
 </html>

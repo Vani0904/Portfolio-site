@@ -53,10 +53,6 @@ body.dark-mode footer{
     background: rgba(22, 22, 22, 0.288);
     color: #fff;
 }
-body.dark-mode .cv-btn button{
-    color: black;
-    background-color: #fff;
-}
 body.dark-mode header{
     background: rgba(22, 22, 22, 0.288);
 }
@@ -124,14 +120,13 @@ header nav ul li a:hover{
 }
 /* hero section styling */
 .hero{
-    padding: 10em 0;
     text-align: center;
-    height: 90vh;
 }
 .hero .container{
     max-width: 1300px;
-    height: 500px;
+    height: fit-content;
     margin: 0 auto;
+    padding: 200px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,6 +137,11 @@ header nav ul li a:hover{
 .hero h1{
     font-size: 3.3rem;
     margin-bottom: 0.5em;
+}
+.hero-img img{
+    max-width: 450px;
+    border-radius: 100px;
+    border: 2px solid #281d52;
 }
 .gradient-purple{
     background: -webkit-linear-gradient(180deg,#281d52, #4F399F);
@@ -170,6 +170,7 @@ header nav ul li a:hover{
     flex-direction: row;
     align-items: center;
     margin-top: 40px;
+    justify-content: center;
 }
 .social-icons a{
     color: #4F399F;
@@ -201,7 +202,7 @@ header nav ul li a:hover{
 .about-me{
     padding: 10em 0;
     text-align: center;
-    height: 80vh;
+    height: fit-content ;
 }
 .about-details{
     height: 600px;
@@ -233,57 +234,31 @@ header nav ul li a:hover{
 .projects{
     padding: 10em 0;
     text-align: center;
-    height: 100vh;
+    height: fit-content;
     margin: 80px 0;
 }
 .projects h2{
     font-size: 2.5rem;
 }
-.project-card{
-    margin: 40px 0;
+.projects h3{
+    font-size: 1.5rem;
+    margin: 30px 0;
+    color: #4F399F;
 }
-.project-card h3{
-    margin-top: 40px;
-    font-size: 2rem;
+.img-gallery{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
 }
-.project-card p{
-    margin: 10px auto;
-    max-width: 60%;
+.img-gallery img {
+    margin: 20px 0;
+    border: 2px solid #5d45b4;
+    border-radius: 20px;
 }
-.carousel{
-    position: relative;
-    width: 100%;
+.img-gallery p:last-of-type{
+    margin-top: 25px;
 }
-.carousel-image{
-    display: none;
-    max-height: 600px;
-    max-width: 80%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #252525;
-    margin: 30px auto;
-}
-.carousel-image.active{
-    display: block;
-}
-.carousel-btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    font-size: 3rem;
-    color: black;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-.prev{
-    left: 10px;
-}
-.next{
-    right: 10px;
-}
-
 /* Skills Section*/
 .skills{
     padding: 10em 0;
@@ -370,6 +345,23 @@ footer{
     margin: 0 auto;
 }
 /* responsive styling */
+@media (max-width: 1130px){
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero img {
+        margin: 10px 0;
+    }
+    .hero .container .hero-img{
+        margin-right: 0;
+    }
+}
+@media (max-width: 1000px){
+    .abt-row p{
+        max-width: none;
+    }
+
+}
 @media (max-width: 668px){
     header .container{
         flex-direction: column;
